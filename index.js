@@ -18,8 +18,8 @@ const txtBoxHead = function() {
 }
 const txtBoxEnt = function(par ) {
     if (par.key == "Enter") {
-        const frstHead = document.querySelector('#Title')
-        frstHead.textContent = ent.value 
+        const flicksDiv = document.querySelector('#flicks')
+        flicksDiv.textContent += ' ' + ent.value 
     }
 }
 
