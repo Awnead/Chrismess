@@ -19,7 +19,7 @@ const txtBoxHead = function() {
 const txtBoxEnt = function(par ) {
     if (par.key == "Enter") {
         const flicksDiv = document.querySelector('#flicks')
-        flicksDiv.innerHTML += `<p>` + ent.value + `</p>`
+        flicksDiv.innerHTML += `<li>` + ent.value + `</li>`
     }
 }
 
