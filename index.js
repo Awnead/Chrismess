@@ -11,7 +11,7 @@ const headingChange = function() {
 
 const addMovie = function() {
     let item = document.createElement('li')
-        item.textContent= mov.value + "(" + yr.value + ")"
+    item.innerHTML= `<span><font color="Darkred">${mov.value}</font></span> <span><font color="#A07FC0">(${yr.value})</font></span>`
         flicks.appendChild(item)
 
         mov.value= ""
@@ -22,10 +22,12 @@ const addMovieByEnter = function(par ) {
     if (par.key == "Enter") {
         
         let item = document.createElement('li')
-        item.innerHTML= `<span><font color="Darkred">mov.value </font></span><span><font color="#A07FC0">"(" + yr.value + ")"</font></span>`
+        item.innerHTML= `<span><font color="Darkred">${mov.value}</font></span> <span><font color="#A07FC0">(${yr.value})</font></span>`
         flicks.appendChild(item)
 
         mov.value= ""
+        yr.value=""
+        mov.focus()
     }
 }
 
