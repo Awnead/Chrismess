@@ -1,13 +1,8 @@
-const btn1 = document.querySelector('#btn1')
 const btn2 = document.querySelector('#btn2')
 const mov = document.querySelector('#Movies')
 const yr = document.querySelector('#Yr')
 const flicks = document.querySelector('#flicks')
 
-const headingChange = function() {
-    const frstHead = document.querySelector('#Title')
-    frstHead.textContent = 'Chrismess With the Cranks'
-}
 
 const addMovie = function() {
     let item = document.createElement('li')
@@ -31,7 +26,6 @@ const addMovieByEnter = function(par ) {
     }
 }
 
-btn1.addEventListener('click', headingChange)
 btn2.addEventListener('click', addMovie)
 mov.addEventListener('keydown', addMovieByEnter)
 yr.addEventListener('keydown', addMovieByEnter)
