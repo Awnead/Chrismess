@@ -55,3 +55,10 @@
 * Display favorites differently.
 * Be sure favorites are recorded appropriately in the array.
 
+## Day 4 Homework
+
+* Try out React at https://reactjs.org/tutorial/tutorial.html
+
+### Super Mega Bonus Credit
+
+* Have a great weekend
