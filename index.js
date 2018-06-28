@@ -1,5 +1,6 @@
 class App {
     constructor() {
+        this.FlickArray = []
         const form = document.querySelector('form')
         form.addEventListener('submit', (ev) => {
             ev.preventDefault()
@@ -26,7 +27,12 @@ class App {
         SubmitHandler(ev) {
         const mov = document.querySelector('#Movies')
         const yr = document.querySelector('#Yr')
-        
+        const flick = {
+            name: mov.value,
+            year: yr.value,
+        }
+
+        this.FlickArray.push(flick)
         const movSpan = this.renderProp("Flick", mov.value)
         const yrSpan = this.renderProp("Created", yr.value)
         this.renderItem(movSpan, yrSpan)
